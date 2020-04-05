@@ -1,0 +1,136 @@
+html{
+	width: 100%;
+	height: 100%;	
+}
+body{
+	width: 100%;
+	height: 100%;						
+	background-color: #f3f3f3;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	background-attachment: fixed;  
+	background-size: cover;
+	overflow: hidden;
+}
+#search_box{
+	width:700px;
+	margin: 120px auto 0px;
+}
+#search_icon_box{
+	width:50px;
+	height:50px;
+	border: 0 none;
+	padding: 1px 0px;
+	background-color: #eaeaea;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+.search_icon{
+	width: 30px;
+    height: 30px;
+    margin: 10px;
+	float: left;
+}
+#search{
+	width:650px;
+	height: 50px;
+	border: 0 none;
+	background:#eaeaea;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	outline: none;
+	font-size: 16px;
+	line-height: 44px;
+	padding-top: 1px;
+	display: block;
+	text-align: left;
+	color: #333333;	
+}
+#keyword_list{
+    width: 700px;
+	border-radius: 3px;
+    background-color: #eaeaea;
+	z-index: 100;
+	position: absolute;
+	overflow: hidden;
+}
+a.keyword_link{
+	height: 32px;
+	line-height: 32px;
+	display: block;
+	font-size: 16px;
+	text-decoration:none;
+	padding-left: 5px;
+	border-radius: 3px;
+	color: #333333;
+}
+a.keyword_link:visited {
+	color: #929292;
+}
+a.keyword_link_hover{
+	height: 33px;
+	line-height: 33px;
+	font-size: 17px;
+	padding-left: 8px;
+	background-color: #e6e6e6;
+}
+#bookmarks_box{
+    width: 1200px;
+    margin: 140px auto 0px;
+}
+.bookmarks_row{
+	width: 1200px;
+	height: 110px;
+	text-align: center;
+}
+a.bookmarks_cell{
+	width: 100px;
+	display: inline-block;
+	margin:0px 4px;
+	text-align: center;
+	text-decoration:none;
+	position:relative;
+}
+a.bookmarks_cell:hover{
+	color: white;
+	top:-6px;
+}
+a.bookmarks_cell:hover .bookmarks_img_box{
+	background-color: #efefef;
+	box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+.bookmarks_img_box{
+	width:62px;
+	height:62px;
+	margin: 0px auto;
+	border-radius: 100px;
+	background-color: #ffffffb3;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bookmarks_img_ico{
+	width:22px;
+	height:22px;
+}
+.bookmarks_img_ABC{
+	width:22px;
+	height:22px;
+	font-size: 20px;
+	line-height: 22px;
+	color:#929292;
+	text-align:center
+}
+.bookmarks_name{
+	width:100px;
+	color: #ffffffb3;
+	font-size: 13px;
+	margin-top:3px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}

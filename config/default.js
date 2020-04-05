@@ -1,0 +1,66 @@
+var CONFIG = {
+	backgroundImg:"./resources/bg002.jpg",
+	default_search_engine:"bing",
+	bookmarks:{list:[],layout:[9,10,9]}
+}
+CONFIG.bookmarks.list.push({
+	name:"GitHub",
+	url:"https://github.com/"
+})
+CONFIG.bookmarks.list.push({
+	name:"谷歌翻译",
+	url:"https://translate.google.cn/"
+})
+CONFIG.bookmarks.list.push({
+	name:"Kaggle",
+	url:"https://www.kaggle.com/"
+})
+CONFIG.bookmarks.list.push({
+	name:"腾讯企业邮箱",
+	url:"https://exmail.qq.com/login"
+})
+CONFIG.bookmarks.list.push({
+	name:"有道云笔记",
+	url:"https://note.youdao.com/signIn/index.html"
+})
+CONFIG.bookmarks.list.push({
+	name:"知网",
+	url:"https://www.cnki.net/"
+})
+CONFIG.bookmarks.list.push({
+	name:"知乎",
+	url:"https://www.zhihu.com/"
+})
+CONFIG.bookmarks.list.push({
+	name:"豆瓣",
+	url:"https://www.douban.com/"
+})
+CONFIG.bookmarks.list.push({
+	name:"bilibili",
+	url:"https://www.bilibili.com/"
+})
+CONFIG.bookmarks.list.push({
+	name:"喜马拉雅",
+	url:"https://www.ximalaya.com/"
+})
+CONFIG.bookmarks.list.push({
+	name:"高德地图",
+	url:"https://ditu.amap.com/"
+})
+CONFIG.bookmarks.list.push({
+	name:"携程",
+	url:"https://www.ctrip.com/"
+})
+CONFIG.bookmarks.list.push({
+	name:"央视新闻",
+	url:"http://news.cctv.com/"
+})
+CONFIG.bookmarks.list.push({
+	name:"今日头条",
+	url:"https://www.toutiao.com/"
+})
+CONFIG.bookmarks.list.push({
+	name:"可自定义",
+	url:"[URL]"
+})
+//可继续追加书签
