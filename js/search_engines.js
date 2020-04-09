@@ -11,13 +11,11 @@ ENGINES.list.push(
 		short_name:"b",
 		icon:"./resources/baiduicon.png",
 		keyword_parser:function(json){
-				var res = []
 				if(json.g){
-					for(var item of json.g){
-						res.push(item.q)
-					}
+					return json.g.map(i=>{return i.q})
+				}else{
+					return []
 				}
-				return res
 			},
 		keyword_url:"https://www.baidu.com/sugrec?ie=utf-8&json=1&prod=pc&from=pc_web",
 		keyword_query_key:"wd",
@@ -30,16 +28,14 @@ ENGINES.list.push(
 		short_name:"i",
 		icon:"./resources/bingicon.png",
 		keyword_parser:function(json){
-				var res = []
-				if(json.g){
-					for(var item of json.g){
-						res.push(item.q)
-					}
+				if(json.AS&&json.AS.Results&&json.AS.Results[0]&&json.AS.Results[0].Suggests){
+					return json.AS.Results[0].Suggests.map(i=>{return i.Txt})
+				}else{
+					return []
 				}
-				return res
 			},
-		keyword_url:"https://www.baidu.com/sugrec?ie=utf-8&json=1&prod=pc&from=pc_web",
-		keyword_query_key:"wd",
+		keyword_url:"http://api.bing.com/qsonhs.aspx?type=cb&cb=?",
+		keyword_query_key:"q",
 		search_url:"https://cn.bing.com/search?q="
 	}
 )
@@ -49,16 +45,10 @@ ENGINES.list.push(
 		short_name:"g",
 		icon:"./resources/googleicon.png",
 		keyword_parser:function(json){
-				var res = []
-				if(json.g){
-					for(var item of json.g){
-						res.push(item.q)
-					}
-				}
-				return res
+				return json[1].map(i=>{return i[0]})
 			},
-		keyword_url:"https://www.baidu.com/sugrec?ie=utf-8&json=1&prod=pc&from=pc_web",
-		keyword_query_key:"wd",
+		keyword_url:"http://suggestqueries.google.com/complete/search?client=psy-ab&jsonp=?",
+		keyword_query_key:"q",
 		search_url:"https://www.google.com/search?q="
 	}
 )

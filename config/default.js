@@ -3,64 +3,80 @@ var CONFIG = {
 	default_search_engine:"bing",
 	bookmarks:{list:[],layout:[9,10,9]}
 }
+//icon:undefined(使用默认),"auto"(自动获取),$URL$(自定义icon地址)
 CONFIG.bookmarks.list.push({
 	name:"GitHub",
-	url:"https://github.com/"
+	url:"https://github.com/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"谷歌翻译",
-	url:"https://translate.google.cn/"
+	url:"https://translate.google.cn/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"Kaggle",
-	url:"https://www.kaggle.com/"
+	url:"https://www.kaggle.com/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"腾讯企业邮箱",
-	url:"https://exmail.qq.com/login"
+	url:"https://exmail.qq.com/login",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"有道云笔记",
-	url:"https://note.youdao.com/signIn/index.html"
+	url:"https://note.youdao.com/signIn/index.html",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"知网",
-	url:"https://www.cnki.net/"
+	url:"https://www.cnki.net/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"知乎",
-	url:"https://www.zhihu.com/"
+	url:"https://www.zhihu.com/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"豆瓣",
-	url:"https://www.douban.com/"
+	url:"https://www.douban.com/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"bilibili",
-	url:"https://www.bilibili.com/"
+	url:"https://www.bilibili.com/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"喜马拉雅",
-	url:"https://www.ximalaya.com/"
+	url:"https://www.ximalaya.com/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"高德地图",
-	url:"https://ditu.amap.com/"
+	url:"https://ditu.amap.com/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"携程",
-	url:"https://www.ctrip.com/"
+	url:"https://www.ctrip.com/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"央视新闻",
-	url:"http://news.cctv.com/"
+	url:"http://news.cctv.com/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"今日头条",
-	url:"https://www.toutiao.com/"
+	url:"https://www.toutiao.com/",
+	icon:undefined
 })
 CONFIG.bookmarks.list.push({
 	name:"可自定义",
-	url:"[URL]"
+	url:"[URL]",
+	icon:undefined
 })
 //可继续追加书签

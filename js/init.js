@@ -11,7 +11,16 @@ function createBookmarksRowObj(){
 function createBookmarkObj(b){
 	var html='<a class="bookmarks_cell" href="'+b.url+'" target="_blank">'
 	html+='<div class="bookmarks_img_box">'
-	var icoUrl=getIcoUrl(b.url)
+	var icoUrl=undefined
+	switch(b.icon){
+		case "auto":
+			icoUrl=getIcoUrl(b.url)
+			break
+		case undefined:
+			break
+		default:
+			icoUrl=b.icon
+	}
 	if(icoUrl){
 		html+='<img class="bookmarks_img_ico" src="'+icoUrl+'"/>'
 	}else{
@@ -24,7 +33,6 @@ function createBookmarkObj(b){
 }
 
 function initBookmarks(bookmarks){
-	console.log(bookmarks)
 	var bookmarksList=bookmarks.list
 	var bookmarksLayout=Array.from(bookmarks.layout)
 	var bookmarksLayoutIndex=0
@@ -103,6 +111,17 @@ function initSearchListening(){
 		oSearch.val(selectObj.text())
 		selectObj.mouseenter()
 		event.preventDefault()
+	})
+	var oKeywordList=$("#keyword_list")
+	oSearch.blur(function(e){
+		if(e.relatedTarget&&e.relatedTarget.classList.contains("keyword_link")){
+			oSearch.focus()
+			return
+		}
+		oKeywordList.hide()
+	})
+	oSearch.focus(function(e){
+		oKeywordList.show()	
 	})
 	$("#search_box").submit(function(e){
 		var searchText=oSearch.val().trim()
