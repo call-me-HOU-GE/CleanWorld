@@ -45,7 +45,7 @@ body{
 	outline: none;
 	font-size: 16px;
 	line-height: 44px;
-	padding-top: 1px;
+	padding: 1px 0px;
 	display: block;
 	text-align: left;
 	color: #333333;	
